@@ -1,0 +1,10 @@
+# Temp files
+.release-notes.tmp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor backup files
+*~
+*.swp

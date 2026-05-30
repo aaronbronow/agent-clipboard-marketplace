@@ -1,0 +1,23 @@
+{
+  "name": "agent-clipboard-marketplace",
+  "owner": {
+    "name": "Aaron Bronow",
+    "email": "abronow@gmail.com"
+  },
+  "metadata": {
+    "description": "Custom marketplace containing clipboard synchronization bridge plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-clipboard-bridge",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/aaronbronow/claude-clipboard-bridge.git"
+      },
+      "description": "Copy any text to the clipboard over SSH, Tmux, WSL, Powershell",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}
