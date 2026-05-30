@@ -16,7 +16,7 @@
         "url": "https://github.com/aaronbronow/claude-clipboard-bridge.git"
       },
       "description": "Copy any text to the clipboard over SSH, Tmux, WSL, Powershell",
-      "version": "1.0.0",
+      "version": "1.0.4",
       "strict": true
     }
   ]
