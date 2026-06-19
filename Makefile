@@ -7,9 +7,9 @@ release:
 	fi
 	@echo "Bumping version to $(VERSION) in .claude-plugin/marketplace.json..." \
 	&& sed -i 's/"version": "[^"]*"/"version": "$(VERSION)"/' .claude-plugin/marketplace.json
-	@echo "Committing version bump..." \
-	&& git add .claude-plugin/marketplace.json \
-	&& (git diff-index --quiet HEAD .claude-plugin/marketplace.json || git commit -m "bump: version $(VERSION)")
+	@echo "Committing version bump and new configs..." \
+	&& git add .claude-plugin/marketplace.json .agents/plugins/marketplace.json README.md \
+	&& (git diff-index --quiet HEAD || git commit -m "bump: version $(VERSION)")
 	@echo "Pushing changes to remote..." \
 	&& git push origin main
 	@echo "Tagging release v$(VERSION)..." \
