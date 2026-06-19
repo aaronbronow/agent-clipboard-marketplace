@@ -9,30 +9,53 @@ A dedicated, custom third-party **Claude Code** Plugin Marketplace catalog hosti
 ## 📦 Available Plugins
 
 ### 1. `claude-clipboard-bridge`
-Seamless cross-environment copy synchronization. Sync code blocks, terminal selections, and logs from local terminals, WSL, remote SSH sessions, Tmux/Screen multiplexers, and containerized Docker sandboxes back to your physical host clipboard automatically using secure, write-only OSC 52 sequences.
+Seamless cross-environment copy synchronization for Claude Code. Sync code blocks, terminal selections, and logs back to your physical host clipboard automatically using secure, write-only OSC 52 sequences.
+
+### 2. `codex-clipboard-bridge`
+Minimal and secure clipboard synchronization plugin specifically for the Codex CLI.
 
 ---
 
 ## 📥 How to Register & Install
 
+### Claude Code
+
 To install plugins hosted in this registry inside your active **Claude Code** session:
 
-### 1. Add the Marketplace Registry
+#### 1. Add the Marketplace Registry
 Register this custom marketplace repository in your terminal environment:
 ```bash
 /plugin marketplace add aaronbronow/agent-clipboard-marketplace
 ```
 
-### 2. Install the Plugin
+#### 2. Install the Plugin
 Install the namespaced clipboard bridge plugin from this registry:
 ```bash
 /plugin install claude-clipboard-bridge@agent-clipboard-marketplace
 ```
 
-### 3. Reload Plugins
-Apply the installation instantly:
+#### 3. Apply the Installation
+Reload plugins instantly:
 ```bash
 /reload-plugins
+```
+
+---
+
+### Codex CLI
+
+To install plugins hosted in this registry inside your active **Codex CLI** session:
+
+#### 1. Add the Marketplace Registry
+Register this custom marketplace repository:
+```bash
+codex plugin marketplace add aaronbronow/agent-clipboard-marketplace
+```
+
+#### 2. Install the Plugin
+Install the clipboard bridge plugin:
+```bash
+/plugin install codex-clipboard-bridge
 ```
 
 ---

@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Custom marketplace containing clipboard synchronization bridge plugins for Claude Code",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
@@ -16,7 +16,7 @@
         "url": "https://github.com/aaronbronow/claude-clipboard-bridge.git"
       },
       "description": "Copy any text to the clipboard over SSH, Tmux, WSL, Powershell",
-      "version": "1.0.4",
+      "version": "1.0.1",
       "strict": true
     }
   ]
